@@ -1,0 +1,41 @@
+export const produits = [
+  {
+    id: 1,
+    nom: 'Savon Noir au Karité',
+    prix: 3500,
+    categorie: 'BEST-SELLER',
+    description: 'Nettoyant doux enrichi en beurre de karité pur. Convient à tous types de peaux.',
+    image: '/images/savon-karite.jpg',
+  },
+  {
+    id: 2,
+    nom: 'Crème Éclat Karité',
+    prix: 8500,
+    categorie: 'HYDRATANT',
+    description: 'Crème riche pour une peau lumineuse et nourrie en profondeur.',
+    image: '/images/creme-karite.jpg',
+  },
+  {
+    id: 3,
+    nom: 'Sérum Baobab & Hibiscus',
+    prix: 12000,
+    categorie: 'ANTI-TACHES',
+    description: 'Sérum concentré pour unifier et éclaircir le teint naturellement.',
+    image: '/images/serum-baobab.jpg',
+  },
+  {
+    id: 4,
+    nom: 'Gommage Café & Miel',
+    prix: 6000,
+    categorie: 'PURIFIANT',
+    description: 'Gommage exfoliant naturel pour une peau douce et raffinée.',
+    image: '/images/gommage-cafe.jpg',
+  },
+  {
+    id: 5,
+    nom: 'MASQUE EXFOLIANT',
+    categorie: 'NETOYANT',
+    description: 'masque exfoliant naturel pour une peau douce et raffinée.',
+    image: '/images/gommage-cafe.jpg',
+  },
+]

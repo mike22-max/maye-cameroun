@@ -1,0 +1,59 @@
+/* ── GOOGLE FONTS ──────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── TOKENS ────────────────────────────────────────── */
+:root {
+  --creme:      #FBF5EE;
+  --creme2:     #F3E9DC;
+  --brun:       #1A1208;
+  --brun-mid:   #6B5744;
+  --rose:       #C87D5F;
+  --dore:       #C9A96E;
+  --blanc:      #FFFFFF;
+  --border:     #EDE3D9;
+  --wa:         #25D366;
+  --radius:     12px;
+  --radius-lg:  20px;
+  --shadow:     0 2px 16px rgba(26,18,8,0.07);
+  --shadow-lg:  0 8px 32px rgba(26,18,8,0.15);
+}
+
+/* ── RESET ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--creme);
+  color: var(--brun);
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; }
+img { max-width: 100%; object-fit: cover; display: block; }
+
+/* ── CONTAINER ─────────────────────────────────────── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── RESPONSIVE HELPERS ────────────────────────────── */
+@media (min-width: 768px) {
+  .only-mobile { display: none !important; }
+}
+@media (max-width: 767px) {
+  .only-desktop { display: none !important; }
+}
+
+/* ── TRANSITIONS GLOBALES ──────────────────────────── */
+* { transition: border-color 0.15s, background-color 0.15s; }

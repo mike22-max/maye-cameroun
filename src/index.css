@@ -57,3 +57,39 @@ img { max-width: 100%; object-fit: cover; display: block; }
 
 /* ── TRANSITIONS GLOBALES ──────────────────────────── */
 * { transition: border-color 0.15s, background-color 0.15s; }
+/* ── MOBILE (< 640px) ──────────────────────────────── */
+@media (max-width: 640px) {
+
+  /* Navbar : cacher nav desktop, montrer hamburger */
+  .only-desktop { display: none !important; }
+  .only-mobile  { display: flex !important; }
+
+  /* Héros : moins de padding */
+  section { padding-left: 1rem; padding-right: 1rem; }
+
+  /* Avant/après : superposer les images sur mobile */
+  .avant-apres-grid {
+    grid-template-columns: 1fr !important;
+    height: 240px !important;
+  }
+
+  /* Panier flottant : largeur auto sur petits écrans */
+  .barre-panier {
+    left: 1rem !important;
+    right: 1rem !important;
+    transform: none !important;
+    border-radius: 16px !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Bannière CTA : empiler verticalement */
+  .cta-banner {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .cta-banner a {
+    align-self: stretch !important;
+    text-align: center !important;
+  }
+}

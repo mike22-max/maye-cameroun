@@ -59,7 +59,6 @@ export default function Navbar(){
                         <Link key={l.chemin} to={l.chemin} style={{
                             fontSize: '0.9rem',
                             color: pathname === l.chemin ? '600' : '400',
-                        }}>{l.chemin}</Link>
                     ))}
                     <Link to="/nos-packs" style={styles.btnCommander}>Commander</Link>
             </div>
